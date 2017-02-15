@@ -143,6 +143,7 @@ describe Student do
         jess.save
 
         first_x_students = Student.first_x_students_in_grade_10(2)
+        #binding.pry
         expect(first_x_students.size).to eq(2)
       end
     end
